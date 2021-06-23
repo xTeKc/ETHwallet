@@ -9,6 +9,8 @@ contract Gash {
     uint256 public totalSupply;
 
 constructor() {
+    totalSupply = 100000 * (10 ** decimals);
+    balanceOf[msg.sender] = totalSupply;
     msg.sender == owner;
 }
 
