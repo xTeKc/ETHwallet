@@ -5,4 +5,9 @@ contract Gash {
     string public symbol = GSH;
     uint256 public decimals = 18;
     uint256 public totalSupply;
+
+constructor() {
+    msg.sender == owner;
+}
+
 }
