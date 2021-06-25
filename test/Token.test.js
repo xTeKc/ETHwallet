@@ -1,7 +1,16 @@
-import { ether } from './helpers'
+const { expect } = require('chai');
+const { ethers } = require('hardhat');
 
-const Token = artifacts.require('./Token')
+describe('Token contract', () => {
+	it('Deployed bStash content', async () => {
+		const [owner] = await ethers.getSigners();
 
-require('chai')
-	.use(require('chai-as-promised'))
-	.should()
+		const Token = await ethers.getContractFactory('Token');
+
+		const bStash = await Token.deploy();
+
+		const ownerBalance = await bStash.balanceOf(owner.address);
+		expect(await bStash.totalSupply()).to.equal(ownerBalance);
+
+	});
+});
