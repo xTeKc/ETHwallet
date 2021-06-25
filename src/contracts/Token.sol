@@ -16,13 +16,13 @@ constructor() {
     owner = msg.sender;
 }
 
-function NameAndSymbol(string memory _name, string memory _symbol) {
+function NameAndSymbol(string memory _name, string memory _symbol) public {
     console.log('Token Name & Symbol');
     name = _name;
     symbol = _symbol;
 }
 
-function DecimalsAndTotal(uint256 _deciamls, uint256 _totalSupply) {
+function DecimalsAndTotal(uint256 _deciamls, uint256 _totalSupply) public {
     console.log('Token Decimals & TotalSupply');
     decimals = _decimals;
     totalSupply = _totalSupply;
