@@ -7,6 +7,7 @@ describe('Token Info', () => {
 		const token = await Token.deploy('Token Deployed!!');
 		await token.deployed();
 
+		expect(await token.NameAndSymbol().to.equal('bStash', 'BSTH'));
 		
 	})
 })
