@@ -17,9 +17,15 @@ constructor() {
 }
 
 function NameAndSymbol(string memory _name, string memory _symbol) {
-    console.log('Token name & Symbol');
+    console.log('Token Name & Symbol');
     name = _name;
     symbol = _symbol;
+}
+
+function DecimalsAndTotal(uint256 _deciamls, uint256 _totalSupply) {
+    console.log('Token Decimals & TotalSupply');
+    decimals = _decimals;
+    totalSupply = _totalSupply;
 }
 
 }
