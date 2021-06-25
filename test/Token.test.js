@@ -1,16 +1,9 @@
 const { expect } = require('chai');
-const { ethers } = require('hardhat');
+const { ethers } = require('ethers');
 
-describe('Token contract', () => {
-	it('Deployed bStash content', async () => {
-		const [owner] = await ethers.getSigners();
-
+describe('Token Info', () => {
+	it('Should show the token Name & Symbol', async () => {
 		const Token = await ethers.getContractFactory('Token');
-
-		const bStash = await Token.deploy();
-
-		const ownerBalance = await bStash.balanceOf(owner.address);
-		expect(await bStash.totalSupply()).to.equal(ownerBalance);
-
-	});
-});
+		
+	})
+})
