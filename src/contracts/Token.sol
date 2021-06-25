@@ -16,4 +16,10 @@ constructor() {
     owner = msg.sender;
 }
 
+function NameAndSymbol(string memory _name, string memory _symbol) {
+    console.log('Token name & Symbol');
+    name = _name;
+    symbol = _symbol;
+}
+
 }
