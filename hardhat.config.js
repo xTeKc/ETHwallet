@@ -15,6 +15,6 @@ module.exports = {
   solidity: "0.8.0",
 };
 
-paths: {
-  sources: 'src/contracts'
-}
+// paths: {
+//   sources: 'src/contracts'
+// }
