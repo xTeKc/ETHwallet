@@ -12,10 +12,11 @@ contract Token {
 
 mapping(address => uint256) public balanceOf;
 
-constructor() {
+constructor(address _owner) {
     totalSupply = 100000 * (10 ** decimals);
     balanceOf[msg.sender] = totalSupply;
     owner = msg.sender;
+    owner = _owner;
 }
 
 function NameAndSymbol(string memory _name, string memory _symbol) public {
