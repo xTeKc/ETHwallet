@@ -1,4 +1,5 @@
 const { expect } = require('chai');
+const { ethers } = require('ethers');
 
 describe('Token contract', () => {
 	it('Should show the token Name & Symbol', async () => {
@@ -10,7 +11,7 @@ describe('Token contract', () => {
 	})
 
 	it('should show the token Decimals and totalSupply', async () => {
-		
+		const Decimals = await ethers.getContractFactory('Decimals')
 	})
 
 })
