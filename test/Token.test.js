@@ -10,8 +10,6 @@ describe('Token contract', () => {
 		
 	})
 
-	it('should show the token Decimals and totalSupply', async () => {
-		const Decimals = await ethers.getContractFactory('Decimals')
-	})
 
+	
 })
