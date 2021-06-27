@@ -8,4 +8,9 @@ describe('Token contract', () => {
 		expect(await token.NameAndSymbol().to.equal('bStash', 'BSTH'));
 		
 	})
+
+	it('should show the token Decimals and totalSupply', async () => {
+		
+	})
+
 })
