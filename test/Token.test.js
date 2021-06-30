@@ -6,6 +6,7 @@ describe('Token contract', () => {
 		const [owner] = await ethers.getSigners();
 		const Token = await ethers.getContractFactory('Token');
 		const token = await Token.deploy('Token Deployed!!');
+		const ownerBalance = await bStash.balanceOf(owner.address)
 
 		expect(await token.NameAndSymbol().to.equal('bStash', 'BSTH'));
 		
