@@ -8,7 +8,7 @@ describe('Token contract', () => {
 		const token = await Token.deploy('Token Deployed!!');
 		const ownerBalance = await bStash.balanceOf(owner.address);
 
-		expect(await bStash.totalSupply()).to.eq.(ownerBalance);
+		expect(await bStash.totalSupply()).to.eq(ownerBalance);
 		expect(await token.NameAndSymbol().to.equal('bStash', 'BSTH'));
 		
 	})
