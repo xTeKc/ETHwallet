@@ -1,5 +1,4 @@
 const { expect } = require('chai');
-const { ethers } = require("ethers");
 
 describe('Token contract', () => {
 	it('Should show the token Name & Symbol', async () => {
