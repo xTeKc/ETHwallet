@@ -31,8 +31,8 @@ function DecimalsAndTotal(uint256 _decimals, uint256 _totalSupply) public {
     totalSupply = _totalSupply;
 }
 
-function balanceOf(address account) externa view returns (uint256) {
-    retrun balances[account];
+function balanceOf(address account) external view returns (uint256) {
+    return balances[account];
 }
 
 }
