@@ -10,7 +10,7 @@ contract Token {
 
     address public owner;
 
-mapping(address => uint256) public balanceOf;
+mapping(address => uint256) public balances;
 
 constructor(address _owner) {
     totalSupply = 100000 * (10 ** decimals);
