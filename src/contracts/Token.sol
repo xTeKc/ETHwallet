@@ -14,7 +14,7 @@ mapping(address => uint256) public balanceOf;
 
 constructor(address _owner) {
     totalSupply = 100000 * (10 ** decimals);
-    balanceOf[msg.sender] = totalSupply;
+    balances[msg.sender] = totalSupply;
     owner = msg.sender;
     owner = _owner;
 }
@@ -29,6 +29,10 @@ function DecimalsAndTotal(uint256 _decimals, uint256 _totalSupply) public {
     console.log('Token Decimals & TotalSupply');
     decimals = _decimals;
     totalSupply = _totalSupply;
+}
+
+function balanceOf(address account) externa view returns (uint256) {
+    retrun balances[account];
 }
 
 }
