@@ -13,7 +13,14 @@ describe('Token contract', () => {
 		bStashToken = await Token.deploy();
 	}) 
 
+describe('deployment', () => {
 
+	it('Should assign the totalSupply to the Owner', async () => {
+		const ownerBalance = await bStashToken.balanceOf(owner.address);
+		expect(await bStashToken.totalSupply()).to.eq.apply(ownerBalance);
+	})
+
+})
 
 
 })
