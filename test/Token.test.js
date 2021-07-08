@@ -9,6 +9,8 @@ describe('Token contract', () => {
 	beforeEach(async () => {
 		const Token = await ethers.getContractFactory('Token');
 		const [owner] = await ethers.getSigners();
+
+		bStashToken = await Token.deploy();
 	}) 
 
 
